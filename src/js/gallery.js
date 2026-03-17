@@ -69,6 +69,7 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
+
 const markup = images.map(({ preview, original, description }) =>
     `<li class="gallery-item">
         <a class="gallery-link" href=${original}>
@@ -83,4 +84,5 @@ const lightbox = new SimpleLightBox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250
 });
+
 
